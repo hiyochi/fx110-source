@@ -1,0 +1,61 @@
+{
+  "bookSourceComment": "FX110 交易图书馆（Netlify 中转版）。部署本仓库到 Netlify 后，把 bookSourceUrl 里的 your-site 换成你的站点名（例如 https://fx110-relay.netlify.app）。中转函数只放行 /book/ 与 /api/book/，并会把页面里的绝对地址重写为 Netlify 域名。封面与插图在 img.dgrhw.net，可直连，无需中转。",
+  "bookSourceGroup": "金融",
+  "bookSourceName": "FX110交易图书馆（Netlify）",
+  "bookSourceType": 0,
+  "bookSourceUrl": "https://your-site.netlify.app",
+  "bookUrlPattern": "https?://[a-z0-9-]+\\.netlify\\.app/book/view/\\d+",
+  "customOrder": 0,
+  "enabled": true,
+  "enabledExplore": true,
+  "exploreUrl": "基础入门学习::/book/category/1-{{page}}\n基本经济指标::/book/category/2-{{page}}\n技术综合提升::/book/category/3-{{page}}\n心态和资金管理::/book/category/4-{{page}}\n短线交易学习::/book/category/5-{{page}}\n黄金、白银::/book/category/6-{{page}}\n热门财经书籍::/book/category/7-{{page}}",
+  "header": "{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\",\"Accept-Language\":\"zh-CN,zh;q=0.9\"}",
+  "lastUpdateTime": 0,
+  "loginUrl": "",
+  "ruleBookInfo": {
+    "author": "class.book-detail-summary@tag.p.0@text##^作\\s*者[：:]\\s*",
+    "coverUrl": "class.book-detail-cover@tag.img@src##\\?.*",
+    "intro": "class.book-detail-description@text",
+    "kind": "",
+    "lastChapter": "class.book-catalog-list@tag.a.-1@text",
+    "name": "class.book-detail-summary@tag.h1@text",
+    "tocUrl": "@css:link[rel=canonical]@href",
+    "wordCount": ""
+  },
+  "ruleContent": {
+    "content": "@css:article.book-reader-content>div@html##<h2[^>]*>[\\s\\S]*?</h2>",
+    "nextContentUrl": "",
+    "sourceRegex": "",
+    "webJs": ""
+  },
+  "ruleExplore": {
+    "author": "tag.dl.0@tag.dd.0@text",
+    "bookList": "class.book-library-grid@tag.article",
+    "bookUrl": "tag.h2@tag.a@href",
+    "coverUrl": "tag.img@src##\\?.*",
+    "intro": "",
+    "kind": "",
+    "lastChapter": "",
+    "name": "tag.h2@tag.a@text",
+    "wordCount": ""
+  },
+  "ruleSearch": {
+    "author": "tag.dl.0@tag.dd.0@text",
+    "bookList": "class.book-search-grid@tag.article",
+    "bookUrl": "tag.h2@tag.a@href",
+    "coverUrl": "tag.img@src##\\?.*",
+    "intro": "",
+    "kind": "",
+    "lastChapter": "",
+    "name": "tag.h2@tag.a@text",
+    "wordCount": ""
+  },
+  "ruleToc": {
+    "chapterList": "@css:.book-catalog-list a",
+    "chapterName": "text",
+    "chapterUrl": "href",
+    "updateTime": ""
+  },
+  "searchUrl": "/book/search?keyword={{java.encodeURI(key)}}&page={{page}}",
+  "weight": 0
+}
