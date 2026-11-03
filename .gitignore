@@ -1,5 +1,6 @@
 .commandcode/
 .netlify/
 node_modules/
+public/source.json
 *.log
 .DS_Store

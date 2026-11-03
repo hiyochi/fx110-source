@@ -1,5 +1,5 @@
 {
-  "bookSourceComment": "FX110 交易图书馆（Netlify 中转版）。已部署到 https://fx110-relay.netlify.app，中转函数只放行 /book/ 与 /api/book/，并把页面里的绝对地址重写为 Netlify 域名。封面与插图在 img.dgrhw.net，可直连，无需中转。",
+  "bookSourceComment": "FX110 交易图书馆（Netlify 中转版）。书源地址：https://fx110-relay.netlify.app/source.json。中转函数只放行 /book/ 与 /api/book/，并把页面里的绝对地址重写为 Netlify 域名。封面与插图在 img.dgrhw.net，可直连，无需中转。",
   "bookSourceGroup": "金融",
   "bookSourceName": "FX110交易图书馆（Netlify）",
   "bookSourceType": 0,
